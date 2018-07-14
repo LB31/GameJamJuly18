@@ -8,15 +8,12 @@ public class Intro : MonoBehaviour {
 
     private int introCount;
 
-
-    [SerializeField]
-    private Image currentImage;
+    
 
     [SerializeField]
     private GameObject[] introImages;
 
-    [SerializeField]
-    private Text[] introTexts;
+
 
     // Use this for initialization
     void Start () {

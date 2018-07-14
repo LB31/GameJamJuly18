@@ -180,8 +180,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The evil forces of the Imperial Brigade think that they can keep me, Cap'n\r\nGitt,
-    locked up like a common criminal! Bah!"
+  m_Text: "Hmmmm. The controls to escape this death trap are being guarded by those\r\ndangerous
+    Battle Drones. Looks like I'll need a little help in order to get\r\nrid of them"
 --- !u!222 &87380374
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -420,6 +420,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 726288994}
+  - {fileID: 1085175337}
   m_Father: {fileID: 1581732796}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -439,12 +440,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ea1ba5a0b3e9340aa296ecee999782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentImage: {fileID: 0}
   introImages:
+  - {fileID: 1085175336}
   - {fileID: 1209232289}
   - {fileID: 1525519998}
   - {fileID: 2033749418}
-  introTexts: []
+  - {fileID: 1815454638}
 --- !u!114 &929526401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +553,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984160318}
+--- !u!1 &1085175336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1085175337}
+  - component: {fileID: 1085175339}
+  - component: {fileID: 1085175338}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1085175337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085175336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 929526399}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -6, y: -73}
+  m_SizeDelta: {x: 794.4, y: 191.70001}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1085175338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085175336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Cap'n Gitt
+--- !u!222 &1085175339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085175336}
 --- !u!1 &1209232289
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +1006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1815454639
 RectTransform:
   m_ObjectHideFlags: 0
@@ -948,7 +1023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -17.999939}
+  m_AnchoredPosition: {x: 385, y: -36}
   m_SizeDelta: {x: 529.5, y: 429.3}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1815454640
@@ -1016,8 +1091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -66, y: -224}
-  m_SizeDelta: {x: 432, y: 240}
+  m_AnchoredPosition: {x: -542.8, y: -56}
+  m_SizeDelta: {x: 345.2, y: 393.1}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1861450459
 MonoBehaviour:
@@ -1051,8 +1126,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"Hmmmm. The controls to escape this death trap are being guarded by those\r\ndangerous
-    Battle Drones. Looks like I'll need a little help in order to get\r\nrid of them.\""
+  m_Text: Time for you to wake up and take care of those drones, little buddy!
 --- !u!222 &1861450460
 CanvasRenderer:
   m_ObjectHideFlags: 0
