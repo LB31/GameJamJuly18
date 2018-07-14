@@ -1,12 +1,20 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9ec0481e241e840bfb3c3edcbcec0662
+=======
+guid: 207327c1c9d9c29428f66d2f187ecd37
+>>>>>>> 0090b0821ed4ed207d5648935b22c297e89bdbbc
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> 0090b0821ed4ed207d5648935b22c297e89bdbbc
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -32,6 +40,7 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -1
+<<<<<<< HEAD
     wrapU: -1
     wrapV: -1
     wrapW: -1
@@ -39,6 +48,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 0
+=======
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+>>>>>>> 0090b0821ed4ed207d5648935b22c297e89bdbbc
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -47,9 +65,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
+<<<<<<< HEAD
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
+=======
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+>>>>>>> 0090b0821ed4ed207d5648935b22c297e89bdbbc
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -67,6 +91,20 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+=======
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+>>>>>>> 0090b0821ed4ed207d5648935b22c297e89bdbbc
   spriteSheet:
     serializedVersion: 2
     sprites: []
