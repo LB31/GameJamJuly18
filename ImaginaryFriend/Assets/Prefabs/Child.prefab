@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 136861881863483332}
   - component: {fileID: 114586869319116400}
   - component: {fileID: 54044713914954206}
+  - component: {fileID: 114952688915743246}
   m_Layer: 0
   m_Name: Child
   m_TagString: Untagged
@@ -116,6 +117,17 @@ MonoBehaviour:
   inputAxisY: 
   inputAxisZ: Vertical2
   acceleration: 106.5
+--- !u!114 &114952688915743246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1273071198878720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f694f51374cfd1040b088ccfd1af4852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136861881863483332
 CapsuleCollider:
   m_ObjectHideFlags: 1
