@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
 			inputAxisZ == ""? 0 : Input.GetAxis(inputAxisZ)
 		);
 
+		movement = Camera.main.transform.TransformDirection(movement);
+		movement = Vector3.Scale(movement, new Vector3(1, 0, 1));
 		movement = movement.normalized;
 
 		rb.AddForce(movement * acceleration, ForceMode.Acceleration);
