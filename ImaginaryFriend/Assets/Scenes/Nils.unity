@@ -425,6 +425,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 114081064708727670, guid: 089391ce26ee93343ad6b39408d052be,
+        type: 2}
+      propertyPath: inputAxisY
+      value: UpDown
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 089391ce26ee93343ad6b39408d052be, type: 2}
   m_IsPrefabParent: 0
