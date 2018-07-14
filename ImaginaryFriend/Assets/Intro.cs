@@ -13,11 +13,15 @@ public class Intro : MonoBehaviour {
     private Image currentImage;
 
     [SerializeField]
-	private Sprite[] introImages;
-    
+    private GameObject[] introImages;
+
+    [SerializeField]
+    private Text[] introTexts;
+
     // Use this for initialization
-	void Start () {
+    void Start () {
 		introCount = 0;
+       
 	}
 	
 	// Update is called once per frame
@@ -27,14 +31,17 @@ public class Intro : MonoBehaviour {
 
     public void NextIntroImage()
     {
+
+     
+        introImages[introCount].SetActive(false);
         introCount ++;
         if(introCount < introImages.Length)
         {
-            currentImage.sprite = introImages[introCount];
+            introImages[introCount].SetActive(true);
         }
         else
         {
-            SceneManager.LoadScene("whatever");
+            SceneManager.LoadScene("Bedroom");
         }
 
     }
