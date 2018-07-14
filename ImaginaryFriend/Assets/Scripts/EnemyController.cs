@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
     private float startY;
+    private bool followingPlayer;
 
 
     public float distanceTresureOrigin;
@@ -12,6 +13,7 @@ public class EnemyController : MonoBehaviour {
     public Transform player;
     public float rotateAroundSpeed;
     public Transform objectToProtect;
+    public float distanceToAttack;
 
 	// Use this for initialization
 	void Start () {
@@ -28,9 +30,10 @@ public class EnemyController : MonoBehaviour {
         float distanceTresure = Vector3.Distance(objectToProtect.position, transform.position);
 
 
-        if (distancePlayer < 15) {
+        if (distancePlayer < distanceToAttack) {
             transform.LookAt(player);
             transform.position = Vector3.MoveTowards(transform.position, player.position, step);
+       
         }
         else
         {
