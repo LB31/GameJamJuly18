@@ -59,7 +59,13 @@ public class EnemyController : MonoBehaviour {
     {
         if (collision.gameObject == player.gameObject)
         {
-            Debug.Log("Killed");
+            // how much the character should be knocked back
+            float magnitude = 5000f;
+            // calculate force vector
+            Vector3 force = collision.gameObject.transform.position - transform.position;
+            // normalize force vector to get direction only and trim magnitude
+            force.Normalize();
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(force * magnitude);
         }
     }
 
