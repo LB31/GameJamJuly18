@@ -7,8 +7,11 @@ public class PlayerController : MonoBehaviour {
 	public string inputAxisY = "";
 	public string inputAxisZ = "Vertical";
 
+	public Vector3 customDrag;
+
 	public float acceleration = 10f;
     public float maxSpeed = 20f;
+	public float jump = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -35,5 +38,11 @@ public class PlayerController : MonoBehaviour {
 
         rb.velocity = rb.velocity.normalized * Mathf.Min(rb.velocity.magnitude, maxSpeed);
 
+		if(Input.GetButtonDown("Jump")) {
+			rb.AddForce(Vector3.up * jump, ForceMode.Impulse);
+
+		}
+
+		rb.AddForce(Vector3.Scale(-rb.velocity, customDrag), ForceMode.VelocityChange);
     }
 }

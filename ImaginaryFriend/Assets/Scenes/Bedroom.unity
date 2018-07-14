@@ -828,6 +828,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 54044713914954206, guid: 3dc31e3db2d45dc4ba57c498aee0df15,
+        type: 2}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136861881863483332, guid: 3dc31e3db2d45dc4ba57c498aee0df15,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 664e062e664cc4d4d812de6fbe071dcd,
+        type: 2}
+    - target: {fileID: 114586869319116400, guid: 3dc31e3db2d45dc4ba57c498aee0df15,
+        type: 2}
+      propertyPath: customDrag.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586869319116400, guid: 3dc31e3db2d45dc4ba57c498aee0df15,
+        type: 2}
+      propertyPath: customDrag.z
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3dc31e3db2d45dc4ba57c498aee0df15, type: 2}
   m_IsPrefabParent: 0
