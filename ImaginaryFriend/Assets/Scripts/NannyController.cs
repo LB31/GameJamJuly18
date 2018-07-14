@@ -5,16 +5,17 @@ using UnityEngine;
 public class NannyController : MonoBehaviour {
     private GameObject player;
     public bool playerHidden;
+    public Vector3 startPosition;
 
     // Use this for initialization
     void Start () {
         player = FindObjectOfType<ChildIdentifier>().gameObject;
-        
+        startPosition = player.transform.position;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Vector3.up * Time.deltaTime * 30);
+        transform.Rotate(Vector3.up * Time.deltaTime * 45);
 
         if (player != null)
         playerHidden = player.GetComponent<PlayerController>().inSaveZone;
@@ -27,7 +28,10 @@ public class NannyController : MonoBehaviour {
         if (angle < 20.0f)
         {
             if (!playerHidden)
-                Destroy(player);
+            {
+                player.transform.position = startPosition;
+            }
+               
         }
            
     }
