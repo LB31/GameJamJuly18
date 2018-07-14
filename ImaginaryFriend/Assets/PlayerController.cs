@@ -10,12 +10,27 @@ public class PlayerController : MonoBehaviour {
 	public float acceleration = 10f;
     public float maxSpeed = 20f;
 
+    public bool inSaveZone;
+
 	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	void FixedUpdate () {
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<saveZone>() != null)
+            inSaveZone = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.GetComponent<saveZone>() != null)
+            inSaveZone = false;
+    }
+
+
+    void FixedUpdate () {
 		Rigidbody rb = GetComponent<Rigidbody>();
 
 		Vector3 movement = new Vector3(
