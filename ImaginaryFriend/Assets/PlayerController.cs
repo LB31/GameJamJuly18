@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public string inputAxisZ = "Vertical";
 
 	public float acceleration = 10f;
+    public float maxSpeed = 20f;
 
 	// Use this for initialization
 	void Start () {
@@ -26,5 +27,8 @@ public class PlayerController : MonoBehaviour {
 		movement = movement.normalized;
 
 		rb.AddForce(movement * acceleration, ForceMode.Acceleration);
-	}
+
+        rb.velocity = rb.velocity.normalized * Mathf.Min(rb.velocity.magnitude, maxSpeed);
+
+    }
 }
