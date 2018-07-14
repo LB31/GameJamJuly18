@@ -6,29 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Bedroom.unity
+    guid: 71e45827761ea7949a344d63347715ef
   - enabled: 1
-    path: Assets/Scenes/Nils.unity
-    guid: 32b0c24bdcc4e4b438aa329ea666be49
-  - enabled: 1
-    path: Assets/Scenes/Leo's.unity
-    guid: eff5546b6555c6041b85fbc771aac73d
+    path: Assets/Scenes/CorridorScene.unity
+    guid: 766802098ab4d504f99f9754868932bb
   - enabled: 1
     path: Assets/Scenes/DeathScene.unity
     guid: 9afbe0330f0fbe94a9b63602648c8de5
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/CorridorScene.unity
-    guid: 766802098ab4d504f99f9754868932bb
+    path: Assets/Scenes/Intro.unity
+    guid: ffb1c264257a35a48adf17c9beab9bc2
   - enabled: 1
     path: Assets/Scenes/PierreTVRoom.unity
     guid: af3751f0c4f09481c9e9ccd89dea0f4e
-=======
-    path: Assets/Scenes/Bedroom.unity
-    guid: 71e45827761ea7949a344d63347715ef
-  - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: ffb1c264257a35a48adf17c9beab9bc2
->>>>>>> 87a9c5e3b9d3e9c96e838b71ad76a79ad53a38a9
   m_configObjects: {}
