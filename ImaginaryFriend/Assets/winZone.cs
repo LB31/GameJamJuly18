@@ -12,7 +12,11 @@ public class winZone : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<PlayerController>() != null)
+        {
             winText.SetActive(true);
+            Destroy(FindObjectOfType<NannyController>().gameObject);
+        }
+            
 
     }
 }
