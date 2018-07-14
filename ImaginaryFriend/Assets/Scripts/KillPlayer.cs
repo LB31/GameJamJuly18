@@ -6,7 +6,8 @@ public class KillPlayer : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneController.instance.ChangeToDeathScene();
+        if (collision.gameObject.tag == "Player")
+            SceneController.instance.ChangeToDeathScene();
     }
 
     // Use this for initialization
