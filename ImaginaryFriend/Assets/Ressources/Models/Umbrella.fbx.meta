@@ -1,16 +1,40 @@
 fileFormatVersion: 2
-guid: 61d408f1a7005a94a9c566dd8b9855fe
+guid: c4a51cb18b5e9b142b690182cd06e602
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Material
-    2100002: Floor
-    2100004: Wall
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: CorridorComponentClean
+    100000: Camera
+    100002: Circle
+    100004: Lamp
+    100006: //RootNode
+    100008: Circle.001
+    100010: Canopy
+    100012: Staff
+    400000: Camera
+    400002: Circle
+    400004: Lamp
+    400006: //RootNode
+    400008: Circle.001
+    400010: Canopy
+    400012: Staff
+    2000000: Camera
+    2100000: UmbrellaCanopy
+    2100002: UmbrellaStaff
+    2300000: Circle
+    2300002: //RootNode
+    2300004: Circle.001
+    2300006: Canopy
+    2300008: Staff
+    3300000: Circle
+    3300002: //RootNode
+    3300004: Circle.001
+    3300006: Canopy
+    3300008: Staff
+    4300000: Circle
+    4300002: Circle.001
+    4300004: Staff
+    4300006: Canopy
+    10800000: Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
