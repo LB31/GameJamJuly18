@@ -7,15 +7,33 @@ public class PlayerController : MonoBehaviour {
 	public string inputAxisY = "";
 	public string inputAxisZ = "Vertical";
 
+	public Vector3 customDrag;
+
 	public float acceleration = 10f;
     public float maxSpeed = 20f;
+	public float jump = 5f;
+
+    public bool inSaveZone;
 
 	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	void FixedUpdate () {
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<saveZone>() != null)
+            inSaveZone = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.GetComponent<saveZone>() != null)
+            inSaveZone = false;
+    }
+
+
+    void FixedUpdate () {
 		Rigidbody rb = GetComponent<Rigidbody>();
 
 		Vector3 movement = new Vector3(
@@ -35,5 +53,11 @@ public class PlayerController : MonoBehaviour {
 
         rb.velocity = rb.velocity.normalized * Mathf.Min(rb.velocity.magnitude, maxSpeed);
 
+		if(Input.GetButtonDown("Jump")) {
+			rb.AddForce(Vector3.up * jump, ForceMode.Impulse);
+
+		}
+
+		rb.AddForce(Vector3.Scale(-rb.velocity, customDrag), ForceMode.VelocityChange);
     }
 }
