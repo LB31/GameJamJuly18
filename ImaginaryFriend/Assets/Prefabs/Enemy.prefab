@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1765870765434894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 1.71, z: -1.66}
+  m_LocalPosition: {x: 11.5, y: 1.71, z: 3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4480669885303658}
@@ -156,12 +156,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f2d293286dc8140bc7233f44b29cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceTresureOrigin: 10
+  distanceTresureOrigin: 5
   amplitude: 1
   speed: 1
   player: {fileID: 0}
   rotateAroundSpeed: 50
   objectToProtect: {fileID: 0}
+  distanceToAttack: 10
 --- !u!193 &193320286893410698
 Tree:
   m_ObjectHideFlags: 1
